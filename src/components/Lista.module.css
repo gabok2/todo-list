@@ -1,0 +1,67 @@
+.lista {
+  margin-top: 1.5rem;
+
+  padding: 1rem;
+  display: flex;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  gap: .075rem;
+
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.circle:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--blueDark);
+}
+
+.circle:hover {
+  background: var(--blueDark);
+}
+
+.check {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.check:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple);
+}
+
+.check:hover {
+  background: var(--purple);
+}
+
+.trash:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--red);
+}
+
+.trash:hover {
+  background: var(--red);
+}
+
+.lista p {
+
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  line-height: 1.18rem;
+  color: var(--gray-100);
+  margin-right: auto;
+  padding-left: .5rem;
+}
+
+p.textCompleted {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}

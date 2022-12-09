@@ -1,0 +1,161 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowInfo {
+  width: 46rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.createdInfo {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+
+}
+
+.createdInfo strong {
+  color: var(--blue);
+}
+
+.createdInfo span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: .125rem .5rem .125rem .5rem;
+  border-radius: 62.4375rem;
+}
+
+.doneInfo {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.doneInfo strong {
+  color: var(--purple);
+}
+
+.doneInfo span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: .125rem .5rem .125rem .5rem;
+  border-radius: 62.4375rem;
+}
+
+.empty {
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding-top: 4rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.empty strong {
+  padding-top: 1rem;
+  line-height: 1.4rem;
+}
+
+.emptyTasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.6875rem;
+  max-width: 46rem;
+}
+
+.emptyTasksContent {
+
+  display: flex;
+  justify-content: space-between;
+  height: 4.5rem;
+  border-radius: .5rem;
+
+  padding: 1rem 0;
+  background-color: var(--gray-500);
+}
+
+
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control p {
+  max-width: 39.5rem;
+  padding-right: 650px;
+}
+
+
+.circle {
+  padding-right: 12px;
+  padding-left: 16px;
+}
+
+.trash {
+  padding-right: 16px;
+
+  background-color: var(--gray-300);
+  background-color: transparent;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.inputContent {
+  display: flex;
+  position: relative;
+  bottom: 3.75rem;
+
+}
+
+.inputForm {
+
+  display: flex;
+  width: 46rem;
+  gap: .5rem;
+}
+
+.inputForm input {
+  height: 3.375rem;
+  flex: 1;
+  padding: 1rem;
+  line-height: 1.4rem;
+  background-color: var(--gray-400);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  color: var(--white);
+}
+
+input::placeholder {
+  color: var(--gray-300);
+}
+
+.inputForm button {
+  width: 5.625rem;
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: 8px;
+  color: var(--gray-100);
+  background-color: var(--blueDark);
+  line-height: 1.1875rem;
+  font-size: .875rem;
+}
+
+.inputForm button[type="submit"] {
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.inputForm button[type="submit"]:hover {
+  background-color: var(--blue);
+}
